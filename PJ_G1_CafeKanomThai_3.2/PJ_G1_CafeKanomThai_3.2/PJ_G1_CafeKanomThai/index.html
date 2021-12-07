@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CafeKanomThai</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <script type="module" src="./js/uiProduct/domProduct.js"></script>
+  <script type="module" src="./Event/Event.js"></script>
+  <script type="module" src="./js/uiProduct/darkmode.js"></script>
+  
+  <!-- Nav Bar -->
+  <!-- bg ที่เป็นแถบสีเขียวข้างบน -->
+  <nav class="bg-green-500" id="nav">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-18">
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+
+          <!-- Home -->
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <a href="#" class="text-yellow-100 hover:bg-yellow-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Home</a>
+
+              <!-- About -->
+              <a href="#" class="text-yellow-100 hover:bg-yellow-300 hover:text-white px-3 py-2 rounded-md text-xl font-medium">About</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search -->
+        <div>
+          <div id="searchbar" style="display: none">
+            <input class="border-2 border-gray-300 bg-white h-10 pl-2 pr-60 rounded-lg text-sm focus:outline-none" 
+            name="search" id="search" placeholder="Search" value="" />
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <button id="isearch" type="button" class="py-4 px-1 relative border-2 border-transparent text-yellow-100 rounded-full
+                hover:text-gray-400 focus:outline-none stransition duration-150 ease-in-out">
+
+            <span class="sr-only">View notifications</span>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+
+          <!-- Cart -->
+          <div class="ml-3 relative">
+            <button class="py-4 px-1 relative border-2 border-transparent text-yellow-100 rounded-full hover:text-gray-400 focus:outline-none
+                  transition duration-150 ease-in-out" aria-label="Cart">
+              <svg class="h-6 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
+                </path>
+              </svg>
+              <span class="sr-only">Cart</span>
+              <span class="absolute inset-0 object-right-top -mr-6">
+                <div class="inline-flex items-center px-1.5 py-0.5 border-2 border-white rounded-full text-xs font-semibold leading-4 bg-red-500
+                      text-white" id="count"></div>
+              </span>
+            </button>
+          </div>
+
+          <!-- clear button -->
+          <button id="clearbtn" class="block text-md px-4 py-2 rounded text-black-700 ml-2 font-bold hover:text-white mt-4 hover:bg-red-700 lg:mt-0">
+            <i class="fas fa-trash"></i>
+          </button>
+
+          <!-- Dark Mode -->
+          <div class="theme-swicth-container">
+            <span id="toggle-icon">
+              <span class="toggle-text">Light Mode</span>
+              <i class="fas fa-sun"></i>
+
+            </span>
+            <label class="theme-swicth">
+              <input type="checkbox" />
+              <div class="slider round"></div>
+            </label>
+            <!-- <i class="fas fa-moon"></i> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container flex justify-center items-center md:mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4 mt-10" id="p"></div>
+  </div>
+  <div class="our-products">
+  </div>
+
+  <!-- clear button Testing -->
+  <!-- <button id="clearbtn" class="btn btn-outline-secondary" type="button">Clear All In Cart</button> -->
+  <!-- <script type="module" src="./Event/Event.js"></script> -->
+</body>
+</html>
