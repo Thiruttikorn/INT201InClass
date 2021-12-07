@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <title>Shopping Cart</title>
+    </head>
+    <body>
+        <header>
+            <div class="overlay"></div>
+            <nav>
+                <h2>SHOP</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="cart">
+                        <a href="cart.html">
+                            <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="mt-3 container" >
+            <span id="searchbar" style="display: inline-block; width: 70%;"></span>
+            <a class="link-secondary" id="search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-5" role="img"
+                    viewBox="0 0 30 30">
+                    <title>Search</title>
+                    <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                    <path d="M21 21l-5.2-5.2"></path>
+                </svg>
+                
+            </a>
+            <span>Search Here</span>
+          </div>
+
+          { <div class="containers">
+            <div class="image">
+                <img src="images/Klamduan.jpg" alt="Klamduan" width="290" height="230">
+                <h3>Klamduan (ขนมกลีบลำดวน)</h3>
+                <h3>35 THB</h3>
+                <a class="add-cart cart1" href="#">Add Cart</a>
+            </div>
+
+            <div class="image">
+                <img src="images/bualoi.jpg" alt="Bualoi" width="290" height="230">
+                <h3>Bualoi (บัวลอย)</h3>
+                <h3>25 THB</h3>
+                <a class="add-cart cart2" href="#">Add Cart</a>
+            </div>
+
+            <div class="image">
+                <img src="images/Tako.jpg" alt="Tako" width="290" height="230">
+                <h3>Tako (ตะโก้)</h3>
+                <h3>35 THB</h3>
+                <a class="add-cart cart3" href="#">Add Cart</a>
+            </div>
+
+            <div class="image">
+                <img src="images/Tongyib.jpg" alt="Tongyib" width="290" height="230">
+                <h3>Tongyib (ทองหยิบ)</h3>
+                <h3>30 THB</h3>
+                <a class="add-cart cart4" href="#">Add Cart</a>
+            </div>            
+
+        </div>}
+
+          <div id="kanom">
+
+
+          </div>
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="main.js" type="module"></script>
+    </body>        
+</html>
